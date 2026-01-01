@@ -20,7 +20,7 @@ function App() {
 
   function check(e){
     e.preventDefault();
-    var loginDetails = axios.post('http://localhost:3000/login',{username:user,password:pass}) 
+    var loginDetails = axios.post('https://login-react-1-gy0k.onrender.com/login',{username:user,password:pass}) 
     loginDetails.then(function(data){
       if(data.data === true){
         navigate("/success")
